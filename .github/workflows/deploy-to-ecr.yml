@@ -35,9 +35,9 @@ jobs:
     # 5. Tag Docker image for ECR
     - name: Tag Docker image
       run: |
-        docker tag appointment-service:latest 922718141448.dkr.ecr.eu-north-1.amazonaws.com/my-service:latest
+        docker tag appointment-service:latest 922718141448.dkr.ecr.eu-north-1.amazonaws.com/appointment-service:latest
 
     # 6. Push Docker image to ECR
     - name: Push Docker image
       run: |
-        docker push 922718141448.dkr.ecr.eu-north-1.amazonaws.com/my-service:latest
+        docker push 922718141448.dkr.ecr.eu-north-1.amazonaws.com/appointment-service:latest
